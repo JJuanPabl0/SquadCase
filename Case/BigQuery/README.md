@@ -5,7 +5,6 @@ Esse documento vai mostrar todo o processo que realizei durante o laboratório b
 Link do Labotario:
 [BQ FOR GOOGLE BIGQUERY](https://www.skills.google/focuses/113704?parent=catalog)
 
----
 
 ## Task 1 — Examinar uma Tabela
 
@@ -46,3 +45,48 @@ bq query --use_legacy_sql=false \
  FROM bigquery-public-data.samples.shakespeare
  WHERE word = "huzzah"'
 ```
+
+
+## Task 4 — Criar Dataset e Carregar Tabela
+
+Listar datasets existentes
+
+```bash
+bq ls
+```
+
+Listar datasets públicos
+
+```bash
+bq ls bigquery-public-data:
+```
+
+Criar dataset chamado babynames
+
+```bash
+bq mk babynames
+```
+
+
+Download e extração dos arquivos
+
+```bash
+wget http://www.ssa.gov/OACT/babynames/names.zip
+ls
+unzip names.zip
+ls
+```
+
+Carregar tabela names2010 no dataset
+
+```bash
+bq load babynames.names2010 yob2010.txt \
+name:string,gender:string,count:integer
+```
+
+Verificar schema
+
+```bash
+bq show babynames.names2010
+```
+
