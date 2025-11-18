@@ -90,3 +90,28 @@ Verificar schema
 bq show babynames.names2010
 ```
 
+## Task 4 — Executar consultas na tabela criada
+
+Top 5 nomes femininos mais populares
+
+```bash
+bq query \
+"SELECT name, count
+ FROM babynames.names2010
+ WHERE gender = 'F'
+ ORDER BY count DESC
+ LIMIT 5"
+```
+
+
+Top 5 nomes masculinos menos comuns
+
+```bash
+bq query \
+"SELECT name, count
+ FROM babynames.names2010
+ WHERE gender = 'M'
+ ORDER BY count ASC
+ LIMIT 5"
+```bash
+
