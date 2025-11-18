@@ -2,9 +2,6 @@
 
 Esse documento vai mostrar todo o processo que realizei durante o laboratório bq for Google BigQuery, utilizando o BigQuery Command Line Tool (bq) para conseguir explorar os dados do GCP, tambem com criação de datasets, carregar tabelas e executar consultas.
 
-Link do Labotario:
-[BQ FOR GOOGLE BIGQUERY](https://www.skills.google/focuses/113704?parent=catalog)
-
 
 ## Task 1 — Examinar uma Tabela
 
@@ -115,3 +112,30 @@ bq query \
  LIMIT 5"
 ```
 
+## Task 5 — Limpeza (remoção do dataset)
+
+Para apagar todo o dataset babynames e suas tabelas:
+
+```bash
+bq rm -r babynames
+```
+
+E só confirmar escrevndo Y.
+
+
+## ✅ Conclusão
+
+ - Neste laboratório foi possível:
+
+- Explorar tabelas públicas do BigQuery
+
+- Executar comandos básicos e avançados do bq CLI
+
+- Criar dataset e carregar arquivo externo
+
+- Executar consultas SQL
+
+- Remover recursos ao final
+
+
+Link do Laboratório usado neste documento: [Bq For Google BigQuery](https://www.skills.google/focuses/113704?parent=catalog)
