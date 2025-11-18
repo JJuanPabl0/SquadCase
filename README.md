@@ -2,3 +2,6 @@
 
 Este repositório contém todos os estudos e exercícios que fiz durante meu período de desenvolvimento na Squad Case da 2RP…
 
+## 🧠 Google BigQuery – Prática com bq CLI
+
+[Lab com as Tasks](Case/BigQuery/README.md)
