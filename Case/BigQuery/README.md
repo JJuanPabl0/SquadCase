@@ -47,7 +47,7 @@ bq query --use_legacy_sql=false \
 ```
 
 
-## Task 4 — Criar Dataset e Carregar Tabela
+## Task 3 — Criar Dataset e Carregar Tabela
 
 Listar datasets existentes
 
