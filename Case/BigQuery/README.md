@@ -113,5 +113,5 @@ bq query \
  WHERE gender = 'M'
  ORDER BY count ASC
  LIMIT 5"
-```bash
+```
 
