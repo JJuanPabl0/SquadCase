@@ -6,3 +6,5 @@ Este repositório contém todos os estudos e exercícios que fiz durante meu per
 
 - 1 - Prática com bq CLI: [Bq for Google BigQuery](Case/BigQuery/README.md)
 
+ - 2 - Usando Cloud Run com BQ: [Use Cloud Run Functions to Load BigQuery](Case/BigQuery/README2.md)
+
