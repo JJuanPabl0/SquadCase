@@ -36,3 +36,8 @@ O padrão Pub/Sub funciona assim:
 - Subscriber → quem assina um ou mais tópicos para receber mensagens
 
 Quando uma nova mensagem é publicada em um tópico, todos os assinantes daquele tópico recebem a atualização.
+
+### 📚 Referências
+
+- Vídeo explicando Pub/Sub de forma clara:
+https://www.youtube.com/watch?v=yF6HVACM7ow
